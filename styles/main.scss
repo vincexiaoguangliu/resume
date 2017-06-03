@@ -1,0 +1,213 @@
+$projectWraperWidth: 262px;
+$projectBorderRadius: 8px;
+$imgTop: -464px;
+$transitionTime: .1s;
+.img-place-holder {
+	display: none;
+}
+.main-content {
+	width: 960px;
+	margin: 0 auto;
+}
+header {
+	@extend .main-content;
+	height: 500px;
+}
+#project {
+	background-image: url(../images/bg03.jpg);
+	.cover {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 50;
+	}
+	.container {
+		@extend .main-content;
+	}
+	h2 {
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		color: #fff;
+		padding: 20px;
+	}
+	.project-example {
+		width: 33.33%;
+		float: left;
+		margin: 20px 0;
+		figure {
+			position: relative;
+			width: $projectWraperWidth;
+			margin: 0 auto;
+			border-radius: 13px;
+			.project-cover {
+				border-top-left-radius: $projectBorderRadius;
+				border-top-right-radius: $projectBorderRadius;
+				overflow: hidden;
+				img {
+					vertical-align: middle;
+					z-index: 10;
+				}
+			}
+			.img-wraper {
+				position: relative;
+				img {
+					width: $projectWraperWidth - 2;
+					position: absolute;
+					visibility: hidden;
+					z-index: -9999;
+				}
+				img:nth-child(1) {
+					z-index: 10;
+				}
+			}
+			.img-wraper-hover {
+				img {
+					visibility: visible;
+					width: $projectWraperWidth - 2;
+					vertical-align: middle;
+					border: 1px solid #999;
+					top: $imgTop;
+					z-index: 100;
+				}
+				img:nth-child(1) {
+					opacity:1;  /* make things invisible upon start */
+					-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+					-moz-animation:fadeIn ease-in 1;
+					animation:fadeIn ease-in 1;
+
+					-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+					-moz-animation-fill-mode:forwards;
+					animation-fill-mode:forwards;
+
+					-webkit-transition: $transitionTime;
+					-moz-transition: $transitionTime;
+					transition: $transitionTime;
+				}
+				img:nth-child(2) {
+					transform: translateX(-100%);
+					box-shadow: -5px 0px 15px #999;
+
+					opacity:0;  /* make things invisible upon start */
+					-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+					-moz-animation:fadeIn ease-in 1;
+					animation:fadeIn ease-in 1;
+
+					-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+					-moz-animation-fill-mode:forwards;
+					animation-fill-mode:forwards;
+
+					-webkit-transition: $transitionTime + .1s;
+					-moz-transition: $transitionTime + .1s;
+					transition: $transitionTime + .1s;
+				}
+				img:nth-child(3) {
+					transform: translateX(100%);
+					box-shadow: 5px 0px 15px #999;
+
+					opacity:0;  /* make things invisible upon start */
+					-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+					-moz-animation:fadeIn ease-in 1;
+					animation:fadeIn ease-in 1;
+
+					-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+					-moz-animation-fill-mode:forwards;
+					animation-fill-mode:forwards;
+
+					-webkit-transition: $transitionTime + .1*2s;
+					-moz-transition: $transitionTime + .1*2s;
+					transition: $transitionTime + .1*2s;
+				}
+				img:nth-child(4) {
+					transform: translateX(-200%);
+					box-shadow: -5px 0px 15px #999;
+
+					opacity:0;  /* make things invisible upon start */
+					-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+					-moz-animation:fadeIn ease-in 1;
+					animation:fadeIn ease-in 1;
+
+					-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+					-moz-animation-fill-mode:forwards;
+					animation-fill-mode:forwards;
+
+					-webkit-transition: $transitionTime + .1*3s;
+					-moz-transition: $transitionTime + .1*3s;
+					transition: $transitionTime + .1*3s;
+				}
+				img:nth-child(5) {
+					transform: translateX(200%);
+					box-shadow: 5px 0px 15px #999;
+
+					opacity:0;  /* make things invisible upon start */
+					-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+					-moz-animation:fadeIn ease-in 1;
+					animation:fadeIn ease-in 1;
+
+					-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+					-moz-animation-fill-mode:forwards;
+					animation-fill-mode:forwards;
+
+					-webkit-transition: $transitionTime + .1*4s;
+					-moz-transition: $transitionTime + .1*4s;
+					transition: $transitionTime + .1*4s;
+				}
+			}
+			figcaption {
+				position: relative;
+				padding: 8px;
+				background-color: #455a64;
+				border-bottom-left-radius: $projectBorderRadius;
+				border-bottom-right-radius: $projectBorderRadius;
+
+				.intro {
+					display: none;
+					position: absolute;
+					width: $projectWraperWidth - 20;
+					height: 50px;
+					top: -70px;
+					left: 0;
+					padding: 10px;
+					color: #fff;
+					z-index: 1000;
+					background: rgba(0, 0, 0, 0.8);
+				}
+				.main-info {
+					h3 {
+						color: #fff;
+						display: inline-block;
+						a {
+							color: #fff;
+						}
+					}
+					time {
+						color: #b0bec5;
+						display: inline-block;
+						float: right;
+					}
+				}
+				.tags {
+					color: #b0bec5;
+					margin: 10px 0 0;
+					border-top: solid 1px rgba(255,255,255,0.075);
+					span {
+						display: inline-block;
+						margin: 10px 10px 0 0;
+						padding: 4px;
+						border-radius: 2px;
+						background: rgba(0,0,0,0.125);
+					}
+				}
+			}
+		}
+	}
+}
+
+@-webkit-keyframes fadeIn { from { display: none; opacity:0; opacity: 1\9; /* IE9 only */ } to {display:block; opacity:1; } }
+@-moz-keyframes fadeIn { from { display: none; opacity:0; opacity: 1\9; /* IE9 only */ } to { display:block; opacity:1; } }
+@keyframes fadeIn { from { display: none; opacity:0; opacity: 1\9; /* IE9 only */ } to { display:block; opacity:1; } }
+
