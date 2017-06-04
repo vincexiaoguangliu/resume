@@ -1,18 +1,18 @@
 $(document).ready(function () {
-  var cover = $(".cover");
-  var figure = $("figure");
-  var imgWraper = $(".img-wraper");
-  var intro = $(".intro");
-  var fillJS = $(".fill-js");
-  var fillHTML = $(".fill-html");
-  var fillCSS = $(".fill-css");
-  var fillPS = $(".fill-ps");
-  var fillGit = $(".fill-git");
-  var fillGulp = $(".fill-gulp");
-  var fillBS = $(".fill-bs");
-  var navBar = $("nav");
-  var navAbout = $(".nav-about");
-  var navProject = $(".nav-project");
+  var cover = $(".cover"),
+      figure = $("figure"),
+      imgWraper = $(".img-wraper"),
+      intro = $(".intro"),
+      fillJS = $(".fill-js"),
+      fillHTML = $(".fill-html"),
+      fillCSS = $(".fill-css"),
+      fillPS = $(".fill-ps"),
+      fillGit = $(".fill-git"),
+      fillGulp = $(".fill-gulp"),
+      fillBS = $(".fill-bs"),
+      navBar = $("nav"),
+      navAbout = $(".nav-about"),
+      navProject = $(".nav-project");
 
   // 技能进度条动画
   var addClassFn = function (key, value) {
