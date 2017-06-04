@@ -13,6 +13,9 @@ header {
 	@extend .main-content;
 	height: 500px;
 }
+a {
+	color: #F68C1E;
+}
 #project {
 	background-image: url(../images/bg03.jpg);
 	.cover {
@@ -175,6 +178,10 @@ header {
 					color: #fff;
 					z-index: 1000;
 					background: rgba(0, 0, 0, 0.8);
+				}
+				.intro-zhl-prod {
+					height: 70px;
+					top: -90px;
 				}
 				.main-info {
 					h3 {
