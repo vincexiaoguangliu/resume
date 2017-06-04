@@ -52,14 +52,4 @@ $(document).ready(function () {
       navProject.removeClass("nav-active");
     };
   });
-
-  // 点击关于返回顶部
-  // navAbout.click(function(){
-  //   console.log(navBar.offset().top);
-  //   navBar.scrollTop(100);
-  // });
-  // // .click(function () {
-  // //   navBar.scrollTop(0);
-  // // });
-
 });

@@ -15,7 +15,7 @@ header {
   background-color: #0ca2ba;
   .header-container {
     @extend .main-content;
-    height: 750px;
+    height: 870px;
     padding-top: $navHeight + 30;
     nav {
       position: fixed;
