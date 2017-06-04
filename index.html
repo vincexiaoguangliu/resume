@@ -1,333 +1,403 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-	<meta charset="UTF-8">
-	<title>刘小光的简历</title>
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="styles/reset.css">
-	<link rel="stylesheet" href="styles/main.css">
-	<script src="scripts/lib/jquery-3.2.1.min.js"></script>
-	<script src="scripts/main.js"></script>
+  <meta charset="UTF-8">
+  <title>刘小光的简历</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/lib/jquery-3.2.1.min.js"></script>
+  <script src="scripts/main.js"></script>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li>作品</li>
-				<li>
-					<ul>
-						<li>技能概述</li>
-						<li>工作经历</li>
-						<li>教育经历</li>
-						<li>业余爱好</li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="project">
-			<div class="container">
-				<div class="cover"></div>
-				<h2>作品</h2>
-				<div class="project-list">
-					<div class="project-example">
-						<figure>
-							<div class="project-cover">
-								<img src="images/zhl_web/cover.jpg" alt="project-cover">
-							</div>
-							<div class="img-wraper">
-								<a href="http://www.zhilinktech.com/" target="_blank">
-									<img src="images/zhl_web/home_mobile.jpg" alt="project-example">
-									<img class="img-place-holder" alt="palce-holder">
-									<img src="images/zhl_web/help_mobile.jpg" alt="project-example">
-									<img class="img-place-holder" alt="palce-holder">
-									<img src="images/zhl_web/pc.jpg" alt="project-example">
-								</a>
-							</div>
-							<figcaption>
-								<div class="intro">
-									<p>智互联科技有限公司官网，自适应手机、PC端，兼容 IE9+ 及其他现代浏览器。前端由本人独立开发。</p>
-								</div>
-								<div class="main-info">
-									<h3>
-										<a href="http://www.zhilinktech.com/" target="_blank">
-											智互联官网
-										</a>
-									</h3>
-									<time>2016.9</time>
-									<div class="clear-fix"></div>
-								</div>
-								<div class="tags">
-									<span>jQuery</span>
-									<span>JavsSript</span>
-									<span>H5</span>
-									<span>Responsive</span>
-									<span>CSS3</span>
-									<span>Jinja</span>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="project-example">
-						<figure>
-							<div class="project-cover">
-								<img src="images/ticket_app/cover.jpg" alt="project-cover">
-							</div>
-							<div class="img-wraper">
-								<img src="images/ticket_app/index.jpg" alt="project-example">
-								<img src="images/ticket_app/car_list.jpg" alt="project-example">
-								<img src="images/ticket_app/seat_detail.jpg" alt="project-example">
-								<img src="images/ticket_app/booking_ticket.jpg" alt="project-example">
-								<img src="images/ticket_app/accout.jpg" alt="project-example">
-							</div>
-							<figcaption>
-								<div class="intro">
-									<p>基于 <a href="http://ionicframework.com/">Ionic 1.0</a> 开发的 Hybrid APP，已在<a href="http://npic.ac.cn/">中国核动力院</a>内部上线使用。前端、设计由本人独立开发。仅限内部使用。</p>
-								</div>
-								<div class="main-info">
-									<h3>订票APP</h3>
-									<time>2016.10 ~ 至今</time>
-									<div class="clear-fix"></div>
-								</div>
-								<div class="tags">
-									<span>Ionic</span>
-									<span>Angular 1.0</span>
-									<span>Gulp</span>
-									<span>Sass</span>
-									<span>Hybrid App</span>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="project-example">
-						<figure>
-							<div class="project-cover">
-								<img src="images/zhl_prod/cover.jpg" alt="project-cover">
-							</div>
-							<div class="img-wraper">
-								<a href="https://www.justsharecloud.com/" target="_blank">
-									<img src="images/zhl_prod/login.jpg" alt="project-example">
-									<img src="images/zhl_prod/main.jpg" alt="project-example">
-									<img class="img-place-holder" alt="palce-holder">
-									<img src="images/zhl_prod/sere_mobile.jpg" alt="project-example">
-								</a>
-							</div>
-							<figcaption>
-								<div class="intro intro-zhl-prod">
-									<p>智互联科技有限公司主营产品：即享软件。主要基于 Angular 1.0，涉及 NodeJS， React， Gulp 及 Git 工作流多人（5人）协作。<b>体验账号/密码：dkcuiui/xuyifeng110</b></p>
-								</div>
-								<div class="main-info">
-									<h3>
-										<a href="https://www.justsharecloud.com/" target="_blank">
-											即享软件
-										</a>
-									</h3>
-									<time>2016.10 ~ 2017.6</time>
-									<div class="clear-fix"></div>
-								</div>
-								<div class="tags">
-									<span>Angular 1.0</span>
-									<span>Gulp</span>
-									<span>NodeJS</span>
-									<span>React</span>
-									<span>Git</span>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="project-example">
-						<figure>
-							<div class="project-cover">
-								<img src="images/zhl_edm/cover.jpg" alt="project-cover">
-							</div>
-							<div class="img-wraper">
-								<a href="https://github.com/xiaogliu/HTML_emails" target="_blank">
-									<img src="images/zhl_edm/edm1.jpg" alt="project-example">
-									<img class="img-place-holder" alt="palce-holder">
-									<img src="images/zhl_edm/edm2.jpg" alt="project-example">
-									<img class="img-place-holder" alt="palce-holder">
-									<img src="images/zhl_edm/edm3.jpg" alt="project-example">
-								</a>
-							</div>
-							<figcaption>
-								<div class="intro">
-									<p>智互联科技有限公司HTML营销邮件，兼容主流邮件客户端。独立开发。</p>
-								</div>
-								<div class="main-info">
-									<h3>
-										<a href="https://github.com/xiaogliu/HTML_emails" target="_blank">
-											HTML营销邮件
-										</a>
-									</h3>
-									<time>2016.12 ~ 2017.6</time>
-									<div class="clear-fix"></div>
-								</div>
-								<div class="tags">
-									<span>html邮件</span>
-									<span>兼容性</span>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="project-example">
-						<figure>
-							<div class="project-cover">
-								<img src="images/xg_blog/cover.jpg" alt="project-cover">
-							</div>
-							<div class="img-wraper">
-								<a href="http://xiaogliu.github.io/" target="_blank">
-									<img src="images/xg_blog/archives_mobile.jpg" alt="project-example">
-									<img src="images/xg_blog/detail_mobile.jpg" alt="project-example">
-									<img src="images/xg_blog/pc.jpg" alt="project-example">
-								</a>
-							</div>
-							<figcaption>
-								<div class="intro">
-									<p>基于 <a href="https://hexo.io/">Hexo</a> 和 <a href="https://pages.github.com/">Github Page</a> 搭建的个人博客，主题在 <a href="https://github.com/forsigner/fexo">Fexo</a> 基础上修改配色及其他细节。</p>
-								</div>
-								<div class="main-info">
-									<h3>
-										<a href="http://xiaogliu.github.io/" target="_blank">
-											我的博客
-										</a>
-									</h3>
-									<time>2016.6 ~ 至今</time>
-									<div class="clear-fix"></div>
-								</div>
-								<div class="tags">
-									<span>Hexo</span>
-									<span>Gulp</span>
-									<span>Sass</span>
-									<span>Responsive</span>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="project-example">
-						<figure>
-							<div class="project-cover">
-								<img src="images/loan_calculator/cover.jpg" alt="project-cover">
-							</div>
-							<div class="img-wraper">
-								<a href="https://codepen.io/xiaogliu/pen/pwoxyV" target="_blank">
-									<img src="images/loan_calculator/index.jpg" alt="project-example">
-								</a>
-							</div>
-							<figcaption>
-								<div class="intro">
-									<p>主要为实践 ES6 语法及 <a href="http://babeljs.io/">Babel</a>。同时，计算器本身可以对比等额本金和等额本息两种贷款之间的差异，非常实用。</p>
-								</div>
-								<div class="main-info">
-									<h3>
-									<a href="https://codepen.io/xiaogliu/pen/pwoxyV" target="_blank">
-											房贷计算器
-										</a>
-									</h3>
-									<time>2017.5</time>
-									<div class="clear-fix"></div>
-								</div>
-								<div class="tags">
-									<span>ES6</span>
-									<span>Babel</span>
-									<span>Gulp</span>
-									<span>jQuery</span>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="project-example">
-						<figure>
-							<div class="project-cover">
-								<img src="images/ninebit_web/cover.jpg" alt="project-cover">
-							</div>
-							<div class="img-wraper">
-								<a href="http://www.ninebit.cn/" target="_blank">
-									<img src="images/ninebit_web/index.jpg" alt="project-example">
-								</a>
-							</div>
-							<figcaption>
-								<div class="intro">
-									<p>基于 Bootstrap，第一个投入线上使用的产品。因为该网站已不再维护，故已有 bug 未修正。前端由本人独立开发。</p>
-								</div>
-								<div class="main-info">
-									<h3>
-										<a href="http://www.ninebit.cn/" target="_blank">
-											九比特官网
-										</a>
-									</h3>
-									<time>2016.4</time>
-									<div class="clear-fix"></div>
-								</div>
-								<div class="tags">
-									<span>Bootstrap</span>
-									<span>jQuery</span>
-									<span>Responsive</span>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="project-example">
-						<figure>
-							<div class="project-cover">
-								<img src="images/quiz_app/cover.jpg" alt="project-cover">
-							</div>
-							<div class="img-wraper">
-								<a href="http://npic.milkedu.com/" target="_blank">
-									<img src="images/quiz_app/index.jpg" alt="project-example">
-									<img src="images/quiz_app/detail.jpg" alt="project-example">
-									<img src="images/quiz_app/menu.jpg" alt="project-example">
-								</a>
-							</div>
-							<figcaption>
-								<div class="intro">
-									<p>首次尝试 Hybrid APP，基于<a href="http://amazeui.org/" target="_blank"> amaze UI </a>。后来接触到 <a href="http://ionicframework.com/">Ionic</a> 及 <a href="https://facebook.github.io/react-native/">React Native</a>，便放弃了 amaze UI 的使用。独立开发。</p>
-								</div>
-								<div class="main-info">
-									<h3>
-										<a href="http://npic.milkedu.com/" target="_blank">
-											党员学习APP
-										</a>
-									</h3>
-									<time>2016.6</time>
-									<div class="clear-fix"></div>
-								</div>
-								<div class="tags">
-									<span>amaze UI</span>
-									<span>H5</span>
-									<span>Hybrid App</span>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="project-example">
-						<figure>
-							<div class="project-cover">
-								<img src="images/ticket_bgm/cover.jpg" alt="project-cover">
-							</div>
-							<div class="img-wraper">
-								<img src="images/ticket_bgm/index.jpg" alt="project-example">
-							</div>
-							<figcaption>
-								<div class="intro">
-									<p>订票APP后台维护系统，在已有模板基础上修改完成。仅限内部使用。</p>
-								</div>
-								<div class="main-info">
-									<h3>订票APP后台管理系统</h3>
-									<time>2017.3</time>
-									<div class="clear-fix"></div>
-								</div>
-								<div class="tags">
-									<span>Bootstrap</span>
-									<span>jQuery</span>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="clear-fix"></div>
-				</div>
-			</div>
-		</section>
-	</main>
+  <header>
+    <div class="header-container" id="test">
+      <nav>
+        <ul>
+          <li class="nav-about nav-active"><a href="#test">关于</a></li>
+          <li class="nav-project"><a href="#project">作品</a></li>
+          <div class="clear-fix"></div>
+        </ul>
+      </nav>
+      <section id="about">
+        <article class="base-info">
+          <div class="avatar">
+            <img src="images/avatar.jpg" alt="avatar">
+          </div>
+          <div class="name">
+            <p>刘小光</p>
+          </div>
+          <div class="position">
+            <p>应聘职位：Web前端工程师</p>
+          </div>
+          <div class="my-info">
+            <h2>基本信息</h2>
+            <ul>
+              <li>专业：电子科学与技术</li>
+              <li>学历：本科</li>
+              <li>毕业院校：广东工业大学</li>
+              <li>英语：六级</li>
+              <li>出生年月：1991年3月</li>
+              <li>籍贯：山东滨州</li>
+              <li>手机：18565681307</li>
+              <li>邮箱：<a href="mailto:xiaogliu@outlook.com" title="点击给我发送邮件">xiaogliu@outlook.com</a></li>
+            </ul>
+          </div>
+          <div class="website">
+            <h2>个人网站</h2>
+            <p><a href="https://github.com/xiaogliu" target="blank"><i class="github"></i>GitHub</a></p>
+            <p><a href="http://xiaogliu.github.io/" target="blank"><i class="blog"></i>我的博客</a></p>
+            <p><a href="https://500px.com/xiaogliu" target="blank"><i class="photography"></i>500px</a></p>
+          </div>
+        </article>
+        <article class="other">
+          <div class="tech">
+            <h2>技能</h2>
+            <div class="tech-info">
+              <p>这里是文字介绍</p>
+            </div>
+            <div class="tech-gragh">
+              <div class="progress-bar">
+                <span class="fill fill-js">JavaScript ( ES6, jQuery, Angular, Babel )</span>
+              </div>
+              <div class="progress-bar">
+                <span class="fill fill-html">HTML ( H5 )</span>
+              </div>
+              <div class="progress-bar">
+                <span class="fill fill-css">CSS ( CSS3, sass )</span>
+              </div>
+              <div class="progress-bar">
+                <span class="fill fill-ps">PhotoShop</span>
+              </div>
+              <div class="progress-bar">
+                <span class="fill fill-git">Git</span>
+              </div>
+              <div class="progress-bar">
+                <span class="fill fill-gulp">Gulp</span>
+              </div>
+              <div class="progress-bar">
+                <span class="fill fill-bs">Bootstrap</span>
+              </div>
+            </div>
+            <div class="clear-fix"></div>
+          </div>
+          <div class="work-experience">
+            <h2>工作经历</h2>
+            <p>这里是工作经历介绍</p>
+          </div>
+          <div class="work-experience">
+            <h2>自我评价</h2>
+            <p>这里是一句话自我评价</p>
+          </div>
+        </article>
+        <div class="clear-fix"></div>
+      </section>
+    </div>
+  </header>
+  <div class="clear-fix"></div>
+  <main>
+    <section id="project">
+      <div class="main-container">
+        <div class="cover"></div>
+        <h2>作品</h2>
+        <div class="project-list">
+          <div class="project-example">
+            <figure>
+              <div class="project-cover">
+                <img src="images/zhl_web/cover.jpg" alt="project-cover">
+              </div>
+              <div class="img-wraper">
+                <a href="http://www.zhilinktech.com/" target="_blank">
+                  <img src="images/zhl_web/home_mobile.jpg" alt="project-example">
+                  <img class="img-place-holder" alt="palce-holder">
+                  <img src="images/zhl_web/help_mobile.jpg" alt="project-example">
+                  <img class="img-place-holder" alt="palce-holder">
+                  <img src="images/zhl_web/pc.jpg" alt="project-example">
+                </a>
+              </div>
+              <figcaption>
+                <div class="intro">
+                  <p>智互联科技有限公司官网，自适应手机、PC端，兼容 IE9+ 及其他现代浏览器。前端由本人独立开发。</p>
+                </div>
+                <div class="main-info">
+                  <h3>
+                    <a href="http://www.zhilinktech.com/" target="_blank">
+                      智互联官网
+                    </a>
+                  </h3>
+                  <time>2016.9</time>
+                  <div class="clear-fix"></div>
+                </div>
+                <div class="tags">
+                  <span>jQuery</span>
+                  <span>JavsSript</span>
+                  <span>H5</span>
+                  <span>Responsive</span>
+                  <span>CSS3</span>
+                  <span>Jinja</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-example">
+            <figure>
+              <div class="project-cover">
+                <img src="images/ticket_app/cover.jpg" alt="project-cover">
+              </div>
+              <div class="img-wraper">
+                <img src="images/ticket_app/index.jpg" alt="project-example">
+                <img src="images/ticket_app/car_list.jpg" alt="project-example">
+                <img src="images/ticket_app/seat_detail.jpg" alt="project-example">
+                <img src="images/ticket_app/booking_ticket.jpg" alt="project-example">
+                <img src="images/ticket_app/accout.jpg" alt="project-example">
+              </div>
+              <figcaption>
+                <div class="intro">
+                  <p>基于 <a href="http://ionicframework.com/">Ionic 1.0</a> 开发的 Hybrid APP，已在<a href="http://npic.ac.cn/">中国核动力院</a>内部上线使用。前端、设计由本人独立开发。仅限内部使用。</p>
+                </div>
+                <div class="main-info">
+                  <h3>订票APP</h3>
+                  <time>2016.10 ~ 至今</time>
+                  <div class="clear-fix"></div>
+                </div>
+                <div class="tags">
+                  <span>Ionic</span>
+                  <span>Angular 1.0</span>
+                  <span>Gulp</span>
+                  <span>Sass</span>
+                  <span>Hybrid App</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-example">
+            <figure>
+              <div class="project-cover">
+                <img src="images/zhl_prod/cover.jpg" alt="project-cover">
+              </div>
+              <div class="img-wraper">
+                <a href="https://www.justsharecloud.com/" target="_blank">
+                  <img src="images/zhl_prod/login.jpg" alt="project-example">
+                  <img src="images/zhl_prod/main.jpg" alt="project-example">
+                  <img class="img-place-holder" alt="palce-holder">
+                  <img src="images/zhl_prod/sere_mobile.jpg" alt="project-example">
+                </a>
+              </div>
+              <figcaption>
+                <div class="intro intro-zhl-prod">
+                  <p>智互联科技有限公司主营产品：即享软件。主要基于 Angular 1.0，涉及 NodeJS， React， Gulp 及 Git 工作流多人（5人）协作。<b>体验账号/密码：dkcuiui/xuyifeng110</b></p>
+                </div>
+                <div class="main-info">
+                  <h3>
+                    <a href="https://www.justsharecloud.com/" target="_blank">
+                      即享软件
+                    </a>
+                  </h3>
+                  <time>2016.10 ~ 2017.6</time>
+                  <div class="clear-fix"></div>
+                </div>
+                <div class="tags">
+                  <span>Angular 1.0</span>
+                  <span>Gulp</span>
+                  <span>NodeJS</span>
+                  <span>React</span>
+                  <span>Git</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-example">
+            <figure>
+              <div class="project-cover">
+                <img src="images/zhl_edm/cover.jpg" alt="project-cover">
+              </div>
+              <div class="img-wraper">
+                <a href="https://github.com/xiaogliu/HTML_emails" target="_blank">
+                  <img src="images/zhl_edm/edm1.jpg" alt="project-example">
+                  <img class="img-place-holder" alt="palce-holder">
+                  <img src="images/zhl_edm/edm2.jpg" alt="project-example">
+                  <img class="img-place-holder" alt="palce-holder">
+                  <img src="images/zhl_edm/edm3.jpg" alt="project-example">
+                </a>
+              </div>
+              <figcaption>
+                <div class="intro">
+                  <p>智互联科技有限公司HTML营销邮件，兼容主流邮件客户端。独立开发。</p>
+                </div>
+                <div class="main-info">
+                  <h3>
+                    <a href="https://github.com/xiaogliu/HTML_emails" target="_blank">
+                      HTML营销邮件
+                    </a>
+                  </h3>
+                  <time>2016.12 ~ 2017.6</time>
+                  <div class="clear-fix"></div>
+                </div>
+                <div class="tags">
+                  <span>html邮件</span>
+                  <span>兼容性</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-example">
+            <figure>
+              <div class="project-cover">
+                <img src="images/xg_blog/cover.jpg" alt="project-cover">
+              </div>
+              <div class="img-wraper">
+                <a href="http://xiaogliu.github.io/" target="_blank">
+                  <img src="images/xg_blog/archives_mobile.jpg" alt="project-example">
+                  <img src="images/xg_blog/detail_mobile.jpg" alt="project-example">
+                  <img src="images/xg_blog/pc.jpg" alt="project-example">
+                </a>
+              </div>
+              <figcaption>
+                <div class="intro">
+                  <p>基于 <a href="https://hexo.io/">Hexo</a> 和 <a href="https://pages.github.com/">Github Page</a> 搭建的个人博客。（ps：如果不能科学上网，加载完成需更多时间，且不可评论，但不影响阅读文章）</p>
+                </div>
+                <div class="main-info">
+                  <h3>
+                    <a href="http://xiaogliu.github.io/" target="_blank">
+                      我的博客
+                    </a>
+                  </h3>
+                  <time>2016.6 ~ 至今</time>
+                  <div class="clear-fix"></div>
+                </div>
+                <div class="tags">
+                  <span>Hexo</span>
+                  <span>Gulp</span>
+                  <span>Sass</span>
+                  <span>Responsive</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-example">
+            <figure>
+              <div class="project-cover">
+                <img src="images/loan_calculator/cover.jpg" alt="project-cover">
+              </div>
+              <div class="img-wraper">
+                <a href="https://codepen.io/xiaogliu/pen/pwoxyV" target="_blank">
+                  <img src="images/loan_calculator/index.jpg" alt="project-example">
+                </a>
+              </div>
+              <figcaption>
+                <div class="intro">
+                  <p>主要为实践 ES6 语法及 <a href="http://babeljs.io/">Babel</a>。同时，计算器本身可以对比等额本金和等额本息两种贷款之间的差异，非常实用。</p>
+                </div>
+                <div class="main-info">
+                  <h3>
+                    <a href="https://codepen.io/xiaogliu/pen/pwoxyV" target="_blank">
+                      房贷计算器
+                    </a>
+                  </h3>
+                  <time>2017.5</time>
+                  <div class="clear-fix"></div>
+                </div>
+                <div class="tags">
+                  <span>ES6</span>
+                  <span>Babel</span>
+                  <span>Gulp</span>
+                  <span>jQuery</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-example">
+            <figure>
+              <div class="project-cover">
+                <img src="images/ninebit_web/cover.jpg" alt="project-cover">
+              </div>
+              <div class="img-wraper">
+                <a href="http://www.ninebit.cn/" target="_blank">
+                  <img src="images/ninebit_web/index.jpg" alt="project-example">
+                </a>
+              </div>
+              <figcaption>
+                <div class="intro">
+                  <p>基于 Bootstrap，第一个投入线上使用的产品。因为该网站已不再维护，故已有 bug 未修正。前端由本人独立开发。</p>
+                </div>
+                <div class="main-info">
+                  <h3>
+                    <a href="http://www.ninebit.cn/" target="_blank">
+                      九比特官网
+                    </a>
+                  </h3>
+                  <time>2016.4</time>
+                  <div class="clear-fix"></div>
+                </div>
+                <div class="tags">
+                  <span>Bootstrap</span>
+                  <span>jQuery</span>
+                  <span>Responsive</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-example">
+            <figure>
+              <div class="project-cover">
+                <img src="images/quiz_app/cover.jpg" alt="project-cover">
+              </div>
+              <div class="img-wraper">
+                <a href="http://npic.milkedu.com/" target="_blank">
+                  <img src="images/quiz_app/index.jpg" alt="project-example">
+                  <img src="images/quiz_app/detail.jpg" alt="project-example">
+                  <img src="images/quiz_app/menu.jpg" alt="project-example">
+                </a>
+              </div>
+              <figcaption>
+                <div class="intro">
+                  <p>首次尝试 Hybrid APP，基于<a href="http://amazeui.org/" target="_blank"> amaze UI </a>。后来接触到 <a href="http://ionicframework.com/">Ionic</a> 及 <a href="https://facebook.github.io/react-native/">React Native</a>，便放弃了 amaze UI 的使用。独立开发。</p>
+                </div>
+                <div class="main-info">
+                  <h3>
+                    <a href="http://npic.milkedu.com/" target="_blank">
+                      党员学习APP
+                    </a>
+                  </h3>
+                  <time>2016.6</time>
+                  <div class="clear-fix"></div>
+                </div>
+                <div class="tags">
+                  <span>amaze UI</span>
+                  <span>H5</span>
+                  <span>Hybrid App</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-example">
+            <figure>
+              <div class="project-cover">
+                <img src="images/ticket_bgm/cover.jpg" alt="project-cover">
+              </div>
+              <div class="img-wraper">
+                <img src="images/ticket_bgm/index.jpg" alt="project-example">
+              </div>
+              <figcaption>
+                <div class="intro">
+                  <p>订票APP后台维护系统，在已有模板基础上修改完成。仅限内部使用。</p>
+                </div>
+                <div class="main-info">
+                  <h3>订票APP后台管理系统</h3>
+                  <time>2017.3</time>
+                  <div class="clear-fix"></div>
+                </div>
+                <div class="tags">
+                  <span>Bootstrap</span>
+                  <span>jQuery</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="clear-fix"></div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

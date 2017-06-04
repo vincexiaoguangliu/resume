@@ -1,18 +1,160 @@
 .img-place-holder {
   display: none; }
 
-.main-content, header, #project .container {
+.main-content, header .header-container, #project .main-container {
   width: 960px;
   margin: 0 auto; }
 
 header {
-  height: 500px; }
+  background-color: #0ca2ba; }
+  header .header-container {
+    height: 750px;
+    padding-top: 90px; }
+    header .header-container nav {
+      position: fixed;
+      height: 60px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #2c3c51;
+      z-index: 9999;
+      box-shadow: 0 2px 10px #555; }
+      header .header-container nav ul {
+        width: 960px;
+        height: 60px;
+        margin: 0 auto; }
+        header .header-container nav ul li {
+          float: left;
+          line-height: 40px;
+          margin: 10px;
+          padding-left: 10px;
+          font-size: 30px;
+          text-align: left;
+          color: rgba(12, 162, 186, 0.3);
+          border-left: 10px solid;
+          border-radius: 10px; }
+          header .header-container nav ul li a {
+            color: rgba(12, 162, 186, 0.3); }
+        header .header-container nav ul .nav-active {
+          color: #1398ad; }
+          header .header-container nav ul .nav-active a {
+            color: #1398ad; }
+    header .header-container #about {
+      padding: 20px; }
+      header .header-container #about .base-info {
+        float: left;
+        width: 230px;
+        padding: 0 10px; }
+        header .header-container #about .base-info h2 {
+          font-size: 16px;
+          font-weight: 600;
+          margin: 10px 0; }
+        header .header-container #about .base-info ul {
+          margin-left: 32px;
+          list-style-type: disc; }
+          header .header-container #about .base-info ul li {
+            margin: 5px 0; }
+        header .header-container #about .base-info .avatar {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          overflow: hidden; }
+        header .header-container #about .base-info .name-position, header .header-container #about .base-info .name, header .header-container #about .base-info .position {
+          width: 200px;
+          height: 40px;
+          text-align: center;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+        header .header-container #about .base-info .name {
+          margin: 10px 0 0 0; }
+          header .header-container #about .base-info .name p {
+            font-size: 16px;
+            line-height: 40px;
+            font-weight: 600; }
+        header .header-container #about .base-info .position p {
+          line-height: 40px;
+          font-weight: 600; }
+        header .header-container #about .base-info .my-info a {
+          color: #000;
+          box-shadow: none;
+          transition: color 0.5s;
+          -webkit-transition: color 0.5s;
+          /* Safari */
+          animation: sploosh 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+          animation-iteration-count: infinite !important; }
+          header .header-container #about .base-info .my-info a:hover {
+            color: #fff; }
+@keyframes sploosh {
+  0% {
+    box-shadow: 0 0 0 0 rgba(7, 105, 173, 0.7); }
+  100% {
+    box-shadow: 0 0 10px 10px rgba(7, 105, 173, 0); } }
+        header .header-container #about .base-info .website p {
+          margin: 5px; }
+          header .header-container #about .base-info .website p i {
+            margin: 2px;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url(../images/icon.png);
+            vertical-align: middle; }
+          header .header-container #about .base-info .website p i.blog {
+            background-position: 0 -24px; }
+          header .header-container #about .base-info .website p i.photography {
+            background-position: 0 -48px; }
+          header .header-container #about .base-info .website p a {
+            display: inline-block;
+            height: 28px;
+            color: #000;
+            transition: color 0.5s;
+            -webkit-transition: color 0.5s;
+            /* Safari */ }
+            header .header-container #about .base-info .website p a:hover {
+              color: #fff; }
+      header .header-container #about .other {
+        float: left; }
+        header .header-container #about .other .tech-work-self, header .header-container #about .other .tech, header .header-container #about .other .work-experience {
+          width: 650px;
+          margin: 5px 0;
+          padding: 10px 0 10px 10px;
+          border-left: 2px solid #2c3c51;
+          border-radius: 8px; }
+        header .header-container #about .other .tech .tech-info {
+          float: left;
+          width: 250px; }
+        header .header-container #about .other .tech .tech-gragh {
+          float: left;
+          width: 400px; }
+          header .header-container #about .other .tech .tech-gragh .progress-bar {
+            margin: 8px 10px 8px 10px;
+            font-size: 12px;
+            background-color: #fff;
+            border: 1px solid #00aaff;
+            border-radius: 12px; }
+            header .header-container #about .other .tech .tech-gragh .progress-bar .fill {
+              display: block;
+              width: 0;
+              height: 16px;
+              line-height: 16px;
+              text-align: center;
+              color: #fff;
+              background-color: #0769ad;
+              border: 1px solid #0769ad;
+              border-radius: 12px;
+              box-shadow: 0 0 5px #0769ad;
+              overflow: hidden;
+              transition: width 1s;
+              -webkit-transition: width 1s;
+              /* Safari */ }
 
 a {
   color: #F68C1E; }
 
 #project {
-  background-image: url(../images/bg03.jpg); }
+  background: url(../images/bg03.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding: 40px 0; }
   #project .cover {
     display: none;
     position: fixed;
@@ -23,11 +165,11 @@ a {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 50; }
   #project h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
     color: #fff;
-    padding: 20px; }
+    padding: 50px; }
   #project .project-example {
     width: 33.33%;
     float: left;
@@ -78,13 +220,10 @@ a {
         transform: translateX(-100%);
         box-shadow: -5px 0px 15px #999;
         opacity: 0;
-        /* make things invisible upon start */
         -webkit-animation: fadeIn ease-in 1;
-        /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
         -moz-animation: fadeIn ease-in 1;
         animation: fadeIn ease-in 1;
         -webkit-animation-fill-mode: forwards;
-        /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
         -moz-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
         -webkit-transition: 0.2s;
@@ -94,13 +233,10 @@ a {
         transform: translateX(100%);
         box-shadow: 5px 0px 15px #999;
         opacity: 0;
-        /* make things invisible upon start */
         -webkit-animation: fadeIn ease-in 1;
-        /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
         -moz-animation: fadeIn ease-in 1;
         animation: fadeIn ease-in 1;
         -webkit-animation-fill-mode: forwards;
-        /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
         -moz-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
         -webkit-transition: 0.3s;
@@ -110,13 +246,10 @@ a {
         transform: translateX(-200%);
         box-shadow: -5px 0px 15px #999;
         opacity: 0;
-        /* make things invisible upon start */
         -webkit-animation: fadeIn ease-in 1;
-        /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
         -moz-animation: fadeIn ease-in 1;
         animation: fadeIn ease-in 1;
         -webkit-animation-fill-mode: forwards;
-        /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
         -moz-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
         -webkit-transition: 0.4s;
@@ -126,13 +259,10 @@ a {
         transform: translateX(200%);
         box-shadow: 5px 0px 15px #999;
         opacity: 0;
-        /* make things invisible upon start */
         -webkit-animation: fadeIn ease-in 1;
-        /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
         -moz-animation: fadeIn ease-in 1;
         animation: fadeIn ease-in 1;
         -webkit-animation-fill-mode: forwards;
-        /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
         -moz-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
         -webkit-transition: 0.5s;
@@ -141,6 +271,7 @@ a {
       #project .project-example figure figcaption {
         position: relative;
         padding: 8px;
+        font-size: 12px;
         background-color: #455a64;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px; }
@@ -159,6 +290,7 @@ a {
           height: 70px;
           top: -90px; }
         #project .project-example figure figcaption .main-info h3 {
+          font-size: 14px;
           color: #fff;
           display: inline-block; }
           #project .project-example figure figcaption .main-info h3 a {
