@@ -16,7 +16,7 @@ header {
   background-color: #0ca2ba;
   .header-container {
     @extend .main-content;
-    height: 1230px;
+    min-height: 1230px;
     padding-top: $navHeight + 30;
     nav {
       position: fixed;
@@ -477,4 +477,3 @@ a {
 @-webkit-keyframes fadeIn { from { display: none; opacity:0; opacity: 1\9; /* IE9 only */ } to {display:block; opacity:1; } }
 @-moz-keyframes fadeIn { from { display: none; opacity:0; opacity: 1\9; /* IE9 only */ } to { display:block; opacity:1; } }
 @keyframes fadeIn { from { display: none; opacity:0; opacity: 1\9; /* IE9 only */ } to { display:block; opacity:1; } }
-

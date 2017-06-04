@@ -9,7 +9,7 @@ header {
   min-width: 1300px;
   background-color: #0ca2ba; }
   header .header-container {
-    height: 1230px;
+    min-height: 1230px;
     padding-top: 90px; }
     header .header-container nav {
       position: fixed;
