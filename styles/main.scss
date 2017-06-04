@@ -12,6 +12,7 @@ $transitionTime: 0.1s;
   margin: 0 auto;
 }
 header {
+  min-width: 1300px;
   background-color: #0ca2ba;
   .header-container {
     @extend .main-content;
@@ -269,6 +270,7 @@ a {
   color: #F68C1E;
 }
 #project {
+  min-width: 1300px;
   background: url(../images/bg03.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
