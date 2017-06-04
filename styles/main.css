@@ -8,7 +8,7 @@
 header {
   background-color: #0ca2ba; }
   header .header-container {
-    height: 870px;
+    height: 1230px;
     padding-top: 90px; }
     header .header-container nav {
       position: fixed;
@@ -46,7 +46,7 @@ header {
         width: 230px;
         padding: 0 10px; }
         header .header-container #about .base-info h2 {
-          font-size: 16px;
+          font-size: 22px;
           font-weight: 600;
           margin: 10px 0; }
         header .header-container #about .base-info ul {
@@ -110,8 +110,21 @@ header {
             /* Safari */ }
             header .header-container #about .base-info .website p a:hover {
               color: #fff; }
+        header .header-container #about .base-info .pdf-file {
+          margin: 20px 0; }
+          header .header-container #about .base-info .pdf-file a {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            background: #2c3c51;
+            text-align: center;
+            border-radius: 6px; }
       header .header-container #about .other {
         float: left; }
+        header .header-container #about .other h2 {
+          font-size: 22px;
+          margin: 10px 0; }
         header .header-container #about .other .tech-work-self, header .header-container #about .other .tech, header .header-container #about .other .work-experience {
           width: 650px;
           margin: 5px 0;
@@ -120,12 +133,23 @@ header {
           border-radius: 8px; }
         header .header-container #about .other .tech .tech-info {
           float: left;
-          width: 250px; }
+          width: 330px; }
+          header .header-container #about .other .tech .tech-info ul {
+            margin-left: 10px; }
+            header .header-container #about .other .tech .tech-info ul li {
+              margin: 8px 0; }
+              header .header-container #about .other .tech .tech-info ul li a {
+                color: #000;
+                transition: color 0.5s;
+                -webkit-transition: color 0.5s;
+                /* Safari */ }
+                header .header-container #about .other .tech .tech-info ul li a:hover {
+                  color: #fff; }
         header .header-container #about .other .tech .tech-gragh {
           float: left;
-          width: 400px; }
+          width: 320px; }
           header .header-container #about .other .tech .tech-gragh .progress-bar {
-            margin: 8px 10px 8px 10px;
+            margin: 8px 10px 15px 10px;
             font-size: 12px;
             background-color: #fff;
             border: 1px solid #00aaff;
@@ -145,6 +169,34 @@ header {
               transition: width 1s;
               -webkit-transition: width 1s;
               /* Safari */ }
+        header .header-container #about .other .work-experience a {
+          color: #000; }
+        header .header-container #about .other .work-experience ul {
+          margin-left: 10px; }
+          header .header-container #about .other .work-experience ul li {
+            margin: 15px 0; }
+            header .header-container #about .other .work-experience ul li .work-company {
+              display: inline-block;
+              font-size: 16px;
+              font-weight: 600;
+              margin: 5px 0; }
+            header .header-container #about .other .work-experience ul li .work-position {
+              display: inline-block;
+              margin: 0 5px; }
+            header .header-container #about .other .work-experience ul li .work-tags {
+              font-size: 12px;
+              margin: 5px 0; }
+              header .header-container #about .other .work-experience ul li .work-tags span {
+                background-color: #0769ad;
+                color: #ddd;
+                margin: 0 5px 0 5px;
+                padding: 2px 4px;
+                font-size: 12px;
+                border-radius: 5px; }
+            header .header-container #about .other .work-experience ul li .work-content {
+              margin: 5px 0; }
+              header .header-container #about .other .work-experience ul li .work-content p {
+                margin: 5px 0; }
 
 a {
   color: #F68C1E; }
@@ -219,7 +271,7 @@ a {
       #project .project-example figure .img-wraper-hover img:nth-child(2) {
         transform: translateX(-100%);
         box-shadow: -5px 0px 15px #999;
-        opacity: 0;
+        opacity: 1;
         -webkit-animation: fadeIn ease-in 1;
         -moz-animation: fadeIn ease-in 1;
         animation: fadeIn ease-in 1;
@@ -232,7 +284,7 @@ a {
       #project .project-example figure .img-wraper-hover img:nth-child(3) {
         transform: translateX(100%);
         box-shadow: 5px 0px 15px #999;
-        opacity: 0;
+        opacity: 1;
         -webkit-animation: fadeIn ease-in 1;
         -moz-animation: fadeIn ease-in 1;
         animation: fadeIn ease-in 1;
@@ -245,7 +297,7 @@ a {
       #project .project-example figure .img-wraper-hover img:nth-child(4) {
         transform: translateX(-200%);
         box-shadow: -5px 0px 15px #999;
-        opacity: 0;
+        opacity: 1;
         -webkit-animation: fadeIn ease-in 1;
         -moz-animation: fadeIn ease-in 1;
         animation: fadeIn ease-in 1;
@@ -258,7 +310,7 @@ a {
       #project .project-example figure .img-wraper-hover img:nth-child(5) {
         transform: translateX(200%);
         box-shadow: 5px 0px 15px #999;
-        opacity: 0;
+        opacity: 1;
         -webkit-animation: fadeIn ease-in 1;
         -moz-animation: fadeIn ease-in 1;
         animation: fadeIn ease-in 1;

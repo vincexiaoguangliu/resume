@@ -15,7 +15,7 @@ header {
   background-color: #0ca2ba;
   .header-container {
     @extend .main-content;
-    height: 870px;
+    height: 1230px;
     padding-top: $navHeight + 30;
     nav {
       position: fixed;
@@ -40,13 +40,13 @@ header {
           color: rgba(12, 162, 186, 0.3);;
           border-left: 10px solid;
           border-radius: 10px;
-          a{
+          a {
             color: rgba(12, 162, 186, 0.3);;
           }
         }
         .nav-active {
           color: #1398ad;
-          a{
+          a {
             color: #1398ad;
           }
         }
@@ -59,7 +59,7 @@ header {
         width: 230px;
         padding: 0 10px;
         h2 {
-          font-size: 16px;
+          font-size: 22px;
           font-weight: 600;
           margin: 10px 0;
         }
@@ -148,9 +148,25 @@ header {
           }
         }
       }
+      .pdf-file {
+        margin: 20px 0;
+        a {
+          display: inline-block;
+          width: 100px;
+          height: 30px;
+          line-height: 30px;
+          background: #2c3c51;
+          text-align: center;
+          border-radius: 6px;
+        }
+      }
     }
     .other {
       float: left;
+      h2 {
+        font-size: 22px;
+        margin: 10px 0;
+      }
       .tech-work-self {
         width: 650px;
         margin: 5px 0;
@@ -162,13 +178,27 @@ header {
         @extend .tech-work-self;
         .tech-info {
           float: left;
-          width: 250px;
+          width: 330px;
+          ul {
+            margin-left: 10px;
+            li {
+              margin: 8px 0;
+              a {
+                color: #000;
+                transition:color 0.5s;
+                -webkit-transition:color 0.5s; /* Safari */
+                &:hover {
+                  color: #fff;
+                }
+              }
+            }
+          }
         }
         .tech-gragh {
           float: left;
-          width: 400px;
+          width: 320px;
           .progress-bar {
-            margin: 8px 10px 8px 10px;
+            margin: 8px 10px 15px 10px;
             font-size: 12px;
             background-color: #fff;
             border: 1px solid #00aaff;
@@ -193,6 +223,43 @@ header {
       }
       .work-experience {
         @extend .tech-work-self;
+        a {
+          color: #000;
+        }
+        ul {
+          margin-left: 10px;
+          li {
+            margin: 15px 0;
+            .work-company {
+              display: inline-block;
+              font-size: 16px;
+              font-weight: 600;
+              margin: 5px 0;
+            }
+            .work-position {
+              display: inline-block;
+              margin: 0 5px;
+            }
+            .work-tags {
+              font-size: 12px;
+              margin: 5px 0;
+              span {
+                background-color: #0769ad;
+                color: #ddd;
+                margin: 0 5px 0 5px;
+                padding: 2px 4px;
+                font-size: 12px;
+                border-radius: 5px;
+              }
+            }
+            .work-content {
+              margin: 5px 0;
+              p {
+                margin: 5px 0;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -284,7 +351,7 @@ a {
           transform: translateX(-100%);
           box-shadow: -5px 0px 15px #999;
 
-          opacity:0;
+          opacity:1;
           -webkit-animation:fadeIn ease-in 1;
           -moz-animation:fadeIn ease-in 1;
           animation:fadeIn ease-in 1;
@@ -301,7 +368,7 @@ a {
           transform: translateX(100%);
           box-shadow: 5px 0px 15px #999;
 
-          opacity:0;
+          opacity:1;
           -webkit-animation:fadeIn ease-in 1;
           -moz-animation:fadeIn ease-in 1;
           animation:fadeIn ease-in 1;
@@ -318,7 +385,7 @@ a {
           transform: translateX(-200%);
           box-shadow: -5px 0px 15px #999;
 
-          opacity:0;
+          opacity:1;
           -webkit-animation:fadeIn ease-in 1;
           -moz-animation:fadeIn ease-in 1;
           animation:fadeIn ease-in 1;
@@ -335,7 +402,7 @@ a {
           transform: translateX(200%);
           box-shadow: 5px 0px 15px #999;
 
-          opacity:0;
+          opacity:1;
           -webkit-animation:fadeIn ease-in 1;
           -moz-animation:fadeIn ease-in 1;
           animation:fadeIn ease-in 1;

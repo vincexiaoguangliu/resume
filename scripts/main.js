@@ -10,6 +10,8 @@ $(document).ready(function () {
       fillGit = $(".fill-git"),
       fillGulp = $(".fill-gulp"),
       fillBS = $(".fill-bs"),
+      fillHAPP = $(".fill-happ"),
+      fillEN = $(".fill-en"),
       navBar = $("nav"),
       navAbout = $(".nav-about"),
       navProject = $(".nav-project");
@@ -26,6 +28,8 @@ $(document).ready(function () {
   addClassFn(fillGit, '75%');
   addClassFn(fillGulp, '80%');
   addClassFn(fillBS, '90%');
+  addClassFn(fillEN, '85%');
+  addClassFn(fillHAPP, '80%');
 
   // 作品明细图片展示动画
   figure.hover(function () {
