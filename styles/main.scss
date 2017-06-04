@@ -39,7 +39,7 @@ header {
           font-size: 30px;
           text-align: left;
           color: rgba(12, 162, 186, 0.3);;
-          border-left: 10px solid;
+          border-left: 10px solid rgba(12, 162, 186, 0.3);
           border-radius: 10px;
           a {
             color: rgba(12, 162, 186, 0.3);;
@@ -47,6 +47,7 @@ header {
         }
         .nav-active {
           color: #1398ad;
+          border-left: 10px solid #1398ad;
           a {
             color: #1398ad;
           }
@@ -316,6 +317,9 @@ a {
       }
       .img-wraper {
         position: relative;
+        a {
+          color: #999;
+        }
         img {
           width: $projectWraperWidth - 2;
           position: absolute;
