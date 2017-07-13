@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> 
   <title>刘小光的简历</title>
-  <link rel="shortcut icon" href="images/favicon.ico" />
-  <link rel="stylesheet" href="styles/reset.css" />
-  <link rel="stylesheet" href="styles/main.css" />
-  <script src="scripts/lib/jquery-3.2.1.min.js"></script>
-  <script src="scripts/main.js"></script>
+  <link rel="shortcut icon" href="dist/img/favicon.ico" />
+  <link rel="stylesheet" href="dist/css/reset.css">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <script src="dist/js/lib/jquery-3.2.1.min.js"></script>
+  <script src="dist/js/main.js"></script>
 </head>
 <body>
   <header>
@@ -23,7 +23,7 @@
       <section id="about">
         <article class="base-info">
           <div class="avatar">
-            <img src="images/avatar.jpg" alt="avatar">
+            <img src="dist/img/avatar.jpg" alt="avatar">
           </div>
           <div class="name">
             <p>刘小光</p>
@@ -60,8 +60,8 @@
             <div class="tech-info">
               <ul>
                 <li>- 能通过 JavaScript、HTML、CSS 快速构建出浏览器兼容、跨平台（手机、PC）的Web页面；</li>
-                <li>- 掌握 AngularJS、jQuery、Bootstrap 等常用前端框架；</li>
-                <li>- 熟练使用 CSS 预处理工具 Sass 及 Gulp、NPM Script 等自动化工具；</li>
+                <li>- 熟练使用 Vue.js、AngularJS、jQuery、Bootstrap 等常用前端框架；</li>
+                <li>- 熟练使用 CSS 预处理工具 Sass 及 Gulp、NPM Script 等自动化工具，了解Webpack的使用；</li>
                 <li>- 熟练使用 Git 进行代码管理（包括多人协作）；</li>
                 <li>- 熟悉 ES6 基础语法，并熟练使用 Babel 将 ES6 转化为 ES5；</li>
                 <li>- 基于Ionic可快速开发 Android、IOS APP；</li>
@@ -71,7 +71,7 @@
             </div>
             <div class="tech-gragh">
               <div class="progress-bar">
-                <span class="fill fill-js">JavaScript ( ES6, jQuery, Angular )</span>
+                <span class="fill fill-js">JavaScript ( Vue.js, jQuery, Angular )</span>
               </div>
               <div class="progress-bar">
                 <span class="fill fill-html">HTML ( H5 )</span>
@@ -80,22 +80,22 @@
                 <span class="fill fill-css">CSS ( CSS3, sass )</span>
               </div>
               <div class="progress-bar">
-                <span class="fill fill-git">Git</span>
+                <span class="fill fill-bs">Bootstrap</span>
               </div>
               <div class="progress-bar">
                 <span class="fill fill-gulp">Gulp</span>
               </div>
               <div class="progress-bar">
-                <span class="fill fill-bs">Bootstrap</span>
+                <span class="fill fill-ps">PhotoShop</span>
+              </div>
+              <div class="progress-bar">
+                <span class="fill fill-git">Git</span>
               </div>
               <div class="progress-bar">
                 <span class="fill fill-happ">Hybrid APP ( 基于 Ionic )</span>
               </div>
               <div class="progress-bar">
-                <span class="fill fill-ps">PhotoShop</span>
-              </div>
-              <div class="progress-bar">
-                <span class="fill fill-en">英文阅读</span>
+                <span class="fill fill-wp">Webpack</span>
               </div>
             </div>
             <div class="clear-fix"></div>
@@ -105,52 +105,60 @@
             <ul>
               <li>
                 <div class="work-head">
-                  <span class="work-company">智互联（深圳）科技有限公司</span> <span class="work-position">前端开发工程师</span> 2016.7 ~ 2017.6
+                  <span class="work-company" style="font-size: 18px;">榄盛咨询服务有限公司</span> <span class="work-position">前端开发工程师</span> 2017.6 ~ 至今
                 </div>
                 <div class="work-tags">
-                  <span>AngularJS</span><span>Git多人协作</span><span>Sass</span><span>Gulp</span><span>NodeJS</span><span>ReactJS</span>
+                  <span>Vue.js</span><span>Webpack</span>
                 </div>
                 <div class="work-content">
-                  <p>期间主要职责为：</p>
-                  <p>- <a href="#project">智互联官网重构及维护</a>；</p>
-                  <p>- <a href="#project">营销邮件 newsletter 的制作</a>；</p>
-                  <p>- <a href="#project">智互联主营产品：即享软件的开发</a>。</p>
+                  <p>主要职责为：</p>
+                  <p>- 公司股筹平台及OA系统的开发及维护。</p>
                 </div>
               </li>
               <li>
                 <div class="work-head">
-                  <span class="work-company">康佳集团股份有限公司</span> <span class="work-position">工艺工程师/前端开发工程师</span> 2014.7（毕业时间） ~ 2016.6
+                  <span class="work-company" style="font-size: 18px;">智互联（深圳）科技有限公司</span> <span class="work-position">前端开发工程师</span> 2016.7 ~ 2017.6
+                </div>
+                <div class="work-tags">
+                <span>AngularJS</span><span>Git多人协作</span><span>Sass</span><span>Gulp</span>
+                </div>
+                <div class="work-content">
+                  <p>期间主要职责为：</p>
+                  <p>- 智互联主营产品：即享软件的开发；</p>
+                  <p>- 智互联官网开发、营销邮件 newsletter 制作。</p>
+                </div>
+              </li>
+              <li>
+                <div class="work-head">
+                  <span class="work-company" style="font-size: 18px;">康佳集团股份有限公司</span> <span class="work-position">工艺工程师</span> 2014.7（毕业时间） ~ 2016.7
                 </div>
                 <div class="work-tags">
                   <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Git代码管理</span><span>Bootstrap</span><span>jQuery</span><span>jQuery Mobile</span><span>amaze UI</span>
                 </div>
                 <div class="work-content">
                   <p>在康佳工作时非全职前端，2015年11月开始，工作之余进行前端开发工作，经历的项目主要有：</p>
-                  <p>- <a href="#project">中国核动力研究设计院党员学习APP</a>；</p>
-                  <p>- <a href="#project">江苏九比特信息系统有限公司官网</a>；</p>
-                  <p>- 股民天下官网重构（站点已关闭）。</p>
+                  <p>- 中国核动力研究设计院党员学习APP；</p>
+                  <p>- 江苏九比特信息系统有限公司官网；</p>
                 </div>
               </li>
               <li>
                 <div class="work-head">
-                  <span class="work-company">其他项目</span> <span class="work-position"></span> 持续进行
+                  <span class="work-company" style="font-size: 18px;">其他项目</span> <span class="work-position"></span> 持续进行
                 </div>
                 <div class="work-tags">
-                  <span>Hybrid APP</span><span>Ionic</span><span>ES6</span><span>Babel</span><span>React Native</span><span>Electron</span>
+                  <span>Hybrid APP</span><span>Ionic</span><span>ES6</span>
                 </div>
                 <div class="work-content">
                   <p>工作之余喜欢用前端技术解决问题及尝试新事物：</p>
-                  <p>- <a href="#project">中国核动力研究设计院班车订票手机APP，采用Ionic框架开发 Android、IOS 手机应用，已上架</a>；</p>
-                  <p>- <a href="#project">房贷计算器，详细对比等额本息和等额本金两种贷款之间的差异</a>；</p>
-                  <p>- 已尝试使用 React Native 开发 Android、IOS 手机应用、计划尝试使用 Electron 开发PC端软件。</p>
+                  <p>- 中国核动力研究设计院班车订票手机APP，采用 Ionic 框架开发的 Android、IOS 手机应用，已上线。</p>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="tech">
+          <div class="work-experience">
             <h2>自我评价</h2>
             <p>热爱前端开发，对技术和用户体验有追求；可流畅阅读英文文档，在前端日新月异的今天能快速学习新技术；有绘画、摄影基础，有一定审美鉴赏能力。</p>
-            <p>现存在不足：计算机底层知识有待加强。</p>
+            <p>现存在不足：计算机基础知识有待加强。</p>
           </div>
         </article>
         <div class="clear-fix"></div>
@@ -167,15 +175,15 @@
           <div class="project-example">
             <figure>
               <div class="project-cover">
-                <img src="images/zhl_web/cover.jpg" alt="project-cover">
+                <img src="dist/img/zhl_web/cover.jpg" alt="project-cover">
               </div>
               <div class="img-wraper">
                 <a href="http://www.zhilinktech.com/" target="_blank">
-                  <img src="images/zhl_web/home_mobile.jpg" alt="project-example">
+                  <img src="dist/img/zhl_web/home_mobile.jpg" alt="project-example">
                   <img class="img-place-holder" alt="palce-holder">
-                  <img src="images/zhl_web/help_mobile.jpg" alt="project-example">
+                  <img src="dist/img/zhl_web/help_mobile.jpg" alt="project-example">
                   <img class="img-place-holder" alt="palce-holder">
-                  <img src="images/zhl_web/pc.jpg" alt="project-example">
+                  <img src="dist/img/zhl_web/pc.jpg" alt="project-example">
                 </a>
               </div>
               <figcaption class="higher">
@@ -205,15 +213,15 @@
           <div class="project-example">
             <figure>
               <div class="project-cover">
-                <img src="images/ticket_app/cover.jpg" alt="project-cover">
+                <img src="dist/img/ticket_app/cover.jpg" alt="project-cover">
               </div>
               <div class="img-wraper">
                 <a href="http://shouji.baidu.com/software/11482855.html" target="_blank">
-                  <img src="images/ticket_app/index.jpg" alt="project-example">
-                  <img src="images/ticket_app/car_list.jpg" alt="project-example">
-                  <img src="images/ticket_app/seat_detail.jpg" alt="project-example">
-                  <img src="images/ticket_app/booking_ticket.jpg" alt="project-example">
-                  <img src="images/ticket_app/accout.jpg" alt="project-example">
+                  <img src="dist/img/ticket_app/index.jpg" alt="project-example">
+                  <img src="dist/img/ticket_app/car_list.jpg" alt="project-example">
+                  <img src="dist/img/ticket_app/seat_detail.jpg" alt="project-example">
+                  <img src="dist/img/ticket_app/booking_ticket.jpg" alt="project-example">
+                  <img src="dist/img/ticket_app/accout.jpg" alt="project-example">
                 </a>
               </div>
               <figcaption class="higher">
@@ -242,14 +250,14 @@
           <div class="project-example">
             <figure>
               <div class="project-cover">
-                <img src="images/zhl_prod/cover.jpg" alt="project-cover">
+                <img src="dist/img/zhl_prod/cover.jpg" alt="project-cover">
               </div>
               <div class="img-wraper">
                 <a href="https://www.justsharecloud.com/" target="_blank">
-                  <img src="images/zhl_prod/login.jpg" alt="project-example">
-                  <img src="images/zhl_prod/main.jpg" alt="project-example">
+                  <img src="dist/img/zhl_prod/login.jpg" alt="project-example">
+                  <img src="dist/img/zhl_prod/main.jpg" alt="project-example">
                   <img class="img-place-holder" alt="palce-holder">
-                  <img src="images/zhl_prod/sere_mobile.jpg" alt="project-example">
+                  <img src="dist/img/zhl_prod/sere_mobile.jpg" alt="project-example">
                 </a>
               </div>
               <figcaption class="higher">
@@ -278,15 +286,15 @@
           <div class="project-example">
             <figure>
               <div class="project-cover">
-                <img src="images/zhl_edm/cover.jpg" alt="project-cover">
+                <img src="dist/img/zhl_edm/cover.jpg" alt="project-cover">
               </div>
               <div class="img-wraper">
                 <a href="https://github.com/xiaogliu/HTML_emails" target="_blank">
-                  <img src="images/zhl_edm/edm1.jpg" alt="project-example">
+                  <img src="dist/img/zhl_edm/edm1.jpg" alt="project-example">
                   <img class="img-place-holder" alt="palce-holder">
-                  <img src="images/zhl_edm/edm2.jpg" alt="project-example">
+                  <img src="dist/img/zhl_edm/edm2.jpg" alt="project-example">
                   <img class="img-place-holder" alt="palce-holder">
-                  <img src="images/zhl_edm/edm3.jpg" alt="project-example">
+                  <img src="dist/img/zhl_edm/edm3.jpg" alt="project-example">
                 </a>
               </div>
               <figcaption>
@@ -312,13 +320,13 @@
           <div class="project-example">
             <figure>
               <div class="project-cover">
-                <img src="images/xg_blog/cover.jpg" alt="project-cover">
+                <img src="dist/img/xg_blog/cover.jpg" alt="project-cover">
               </div>
               <div class="img-wraper">
                 <a href="http://xiaogliu.github.io/" target="_blank">
-                  <img src="images/xg_blog/archives_mobile.jpg" alt="project-example">
-                  <img src="images/xg_blog/detail_mobile.jpg" alt="project-example">
-                  <img src="images/xg_blog/pc.jpg" alt="project-example">
+                  <img src="dist/img/xg_blog/archives_mobile.jpg" alt="project-example">
+                  <img src="dist/img/xg_blog/detail_mobile.jpg" alt="project-example">
+                  <img src="dist/img/xg_blog/pc.jpg" alt="project-example">
                 </a>
               </div>
               <figcaption>
@@ -346,11 +354,11 @@
           <div class="project-example">
             <figure>
               <div class="project-cover">
-                <img src="images/loan_calculator/cover.jpg" alt="project-cover">
+                <img src="dist/img/loan_calculator/cover.jpg" alt="project-cover">
               </div>
               <div class="img-wraper">
                 <a href="https://codepen.io/xiaogliu/pen/pwoxyV" target="_blank">
-                  <img src="images/loan_calculator/index.jpg" alt="project-example">
+                  <img src="dist/img/loan_calculator/index.jpg" alt="project-example">
                 </a>
               </div>
               <figcaption>
@@ -378,11 +386,11 @@
           <div class="project-example">
             <figure>
               <div class="project-cover">
-                <img src="images/ninebit_web/cover.jpg" alt="project-cover">
+                <img src="dist/img/ninebit_web/cover.jpg" alt="project-cover">
               </div>
               <div class="img-wraper">
                 <a href="http://www.ninebit.cn/" target="_blank">
-                  <img src="images/ninebit_web/index.jpg" alt="project-example">
+                  <img src="dist/img/ninebit_web/index.jpg" alt="project-example">
                 </a>
               </div>
               <figcaption>
@@ -409,13 +417,13 @@
           <div class="project-example">
             <figure>
               <div class="project-cover">
-                <img src="images/quiz_app/cover.jpg" alt="project-cover">
+                <img src="dist/img/quiz_app/cover.jpg" alt="project-cover">
               </div>
               <div class="img-wraper">
                 <a href="http://npic.milkedu.com/" target="_blank">
-                  <img src="images/quiz_app/index.jpg" alt="project-example">
-                  <img src="images/quiz_app/detail.jpg" alt="project-example">
-                  <img src="images/quiz_app/menu.jpg" alt="project-example">
+                  <img src="dist/img/quiz_app/index.jpg" alt="project-example">
+                  <img src="dist/img/quiz_app/detail.jpg" alt="project-example">
+                  <img src="dist/img/quiz_app/menu.jpg" alt="project-example">
                 </a>
               </div>
               <figcaption>
@@ -442,10 +450,10 @@
           <div class="project-example">
             <figure>
               <div class="project-cover">
-                <img src="images/ticket_bgm/cover.jpg" alt="project-cover">
+                <img src="dist/img/ticket_bgm/cover.jpg" alt="project-cover">
               </div>
               <div class="img-wraper">
-                <img src="images/ticket_bgm/index.jpg" alt="project-example">
+                <img src="dist/img/ticket_bgm/index.jpg" alt="project-example">
               </div>
               <figcaption>
                 <div class="intro">

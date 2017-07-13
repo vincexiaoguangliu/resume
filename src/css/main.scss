@@ -129,7 +129,7 @@ header {
             display: inline-block;
             width: 24px;
             height: 24px;
-            background: url(../images/icon.png);
+            background: url(../img/icon.png);
             vertical-align: middle;
           }
           i.blog {
@@ -172,7 +172,7 @@ header {
       .tech-work-self {
         width: 650px;
         margin: 5px 0;
-        padding: 10px 0 10px 10px;
+        padding: 5px 0 5px 10px;
         border-left: 2px solid #2c3c51;
         border-radius: 8px;
       }
@@ -182,7 +182,7 @@ header {
           float: left;
           width: 330px;
           ul {
-            margin-left: 10px;
+            margin-left: 6px;
             li {
               margin: 8px 0;
               a {
@@ -209,8 +209,9 @@ header {
               display: block;
               width: 0;
               height: 16px;
+              padding-left: 8px;
               line-height: 16px;
-              text-align: center;
+              text-align: left;
               color: #fff;
               background-color: #0769ad;
               border: 1px solid #0769ad;
@@ -272,7 +273,7 @@ a {
 }
 #project {
   min-width: 1300px;
-  background: url(../images/bg03.jpg) no-repeat center center;
+  background: url(../img/bg03.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
