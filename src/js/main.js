@@ -12,6 +12,7 @@ $(document).ready(function() {
         fillBS = $(".fill-bs"),
         fillHAPP = $(".fill-happ"),
         fillWP = $(".fill-wp"),
+        fillND = $(".fill-node"),
         navBar = $("nav"),
         navAbout = $(".nav-about"),
         navProject = $(".nav-project");
@@ -20,13 +21,14 @@ $(document).ready(function() {
     };
     addClassFn(fillJS, "70%");
     addClassFn(fillHTML, "85%");
-    addClassFn(fillCSS, "85%");
+    addClassFn(fillCSS, "80%");
     addClassFn(fillPS, "90%");
     addClassFn(fillGit, "60%");
     addClassFn(fillGulp, "80%");
     addClassFn(fillBS, "90%");
     addClassFn(fillWP, "50%");
     addClassFn(fillHAPP, "55%");
+    addClassFn(fillND, "15%");
     figure.hover(function() {
         var _this = $(this);
         _this.css("z-index", "60");

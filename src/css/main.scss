@@ -238,6 +238,11 @@ header {
               font-size: 16px;
               font-weight: 600;
               margin: 5px 0;
+              a:hover {
+                color: #ddd;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s; /* Safari */
+              }
             }
             .work-position {
               display: inline-block;
