@@ -28,7 +28,7 @@ $(document).ready(function() {
     addClassFn(fillBS, "90%");
     addClassFn(fillWP, "50%");
     addClassFn(fillHAPP, "55%");
-    addClassFn(fillND, "15%");
+    addClassFn(fillND, "18%");
     figure.hover(function() {
         var _this = $(this);
         _this.css("z-index", "60");
