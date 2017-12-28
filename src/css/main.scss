@@ -278,7 +278,14 @@ a {
 }
 #project {
   min-width: 1300px;
-  background: url(../img/bg03.jpg) no-repeat center center;
+  // background: url(../img/bg03.jpg) no-repeat center center;
+  // background: linear-gradient(to bottom right, #2c3c51, #5c80af);
+  // background: repeating-radial-gradient(#2c3c51, #2c3c51 5px, #5c80af 5px, #5c80af 10px);
+  background-color: #000;
+  background-image: repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(44, 60, 81, 0.25) 50px, rgba(44, 60, 81, 0.25) 56px, transparent 56px, transparent 63px, rgba(44, 60, 81, 0.25) 63px, rgba(44, 60, 81, 0.25) 69px, transparent 69px, transparent 116px, rgba(46, 66, 93, 0.25) 116px, rgba(46, 66, 93, 0.25) 166px),
+  repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(44, 60, 81, 0.25) 50px, rgba(44, 60, 81, 0.25) 56px, transparent 56px, transparent 63px, rgba(44, 60, 81, 0.25) 63px, rgba(44, 60, 81, 0.25) 69px, transparent 69px, transparent 116px, rgba(46, 66, 93, 0.25) 116px, rgba(46, 66, 93, 0.25) 166px),
+  repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(27, 35, 46, 0.25) 5px, rgba(27, 35, 46, 0.25) 10px),
+  repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(27, 35, 46, 0.25) 5px, rgba(27, 35, 46, 0.25) 10px);
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
