@@ -320,9 +320,12 @@ a {
       margin: 0 auto;
       border-radius: 13px;
       .project-cover {
+        width: $projectWraperWidth - 2;
+        height: $projectWraperWidth - 2;
         border-top-left-radius: $projectBorderRadius;
         border-top-right-radius: $projectBorderRadius;
         overflow: hidden;
+        background: radial-gradient(circle closest-side, #547eb4 50%, white);
         img {
           vertical-align: middle;
           z-index: 10;
@@ -330,13 +333,11 @@ a {
       }
       .img-wraper {
         position: relative;
-        background-color: #0769ad;
         a {
           color: #999;
         }
         img {
           width: $projectWraperWidth - 2;
-          height: $projectWraperWidth - 2;
           position: absolute;
           visibility: hidden;
           z-index: -9999;
