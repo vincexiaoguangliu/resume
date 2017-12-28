@@ -19,14 +19,14 @@ $(document).ready(function() {
     var addClassFn = function(key, value) {
         key.css("width", value)
     };
-    addClassFn(fillJS, "70%");
-    addClassFn(fillHTML, "85%");
-    addClassFn(fillCSS, "80%");
+    addClassFn(fillJS, "75%");
+    addClassFn(fillHTML, "80%");
+    addClassFn(fillCSS, "85%");
     addClassFn(fillPS, "90%");
     addClassFn(fillGit, "60%");
-    addClassFn(fillGulp, "80%");
+    addClassFn(fillGulp, "85%");
     addClassFn(fillBS, "90%");
-    addClassFn(fillWP, "50%");
+    addClassFn(fillWP, "30%");
     addClassFn(fillHAPP, "55%");
     addClassFn(fillND, "18%");
     figure.hover(function() {
