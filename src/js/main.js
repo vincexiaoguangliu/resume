@@ -26,7 +26,7 @@ $(document).ready(function() {
     addClassFn(fillGit, "60%");
     addClassFn(fillGulp, "85%");
     addClassFn(fillBS, "90%");
-    addClassFn(fillWP, "30%");
+    addClassFn(fillWP, "29%");
     addClassFn(fillHAPP, "55%");
     addClassFn(fillND, "18%");
     figure.hover(function() {
