@@ -330,11 +330,13 @@ a {
       }
       .img-wraper {
         position: relative;
+        background-color: #0769ad;
         a {
           color: #999;
         }
         img {
           width: $projectWraperWidth - 2;
+          height: $projectWraperWidth - 2;
           position: absolute;
           visibility: hidden;
           z-index: -9999;
