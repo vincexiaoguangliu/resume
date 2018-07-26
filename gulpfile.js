@@ -10,6 +10,13 @@ gulp.task('sass', function () {
 		.pipe(gulp.dest('./dist/css/'))
 });
 
+gulp.task('pdf', function () {
+	gulp.src('./src/css/pdf.scss')
+		.pipe(sass())
+		.pipe(minify())
+		.pipe(gulp.dest('./dist/pdf/'))
+});
+
 gulp.task('minjs', function () {
 	gulp.src('./src/js/main.js')
 		.pipe(uglify())
@@ -17,6 +24,7 @@ gulp.task('minjs', function () {
 });
 
 gulp.task('watch', function () {
+	gulp.watch('./src/css/pdf.scss', ['pdf']);
 	gulp.watch('./src/css/main.scss', ['sass']);
 	gulp.watch('./src/js/main.js', ['minjs']);
 });

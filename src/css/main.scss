@@ -16,7 +16,6 @@ header {
   background-color: #0ca2ba;
   .header-container {
     @extend .main-content;
-    min-height: 1230px;
     padding-top: $navHeight + 30;
     nav {
       position: fixed;
@@ -125,18 +124,21 @@ header {
         p {
           margin: 5px;
           i {
-            margin: 2px;
+            margin: -6px 8px -6px 0;
             display: inline-block;
             width: 24px;
             height: 24px;
-            background: url(../img/icon.png);
-            vertical-align: middle;
+          }
+          i.github {
+            background: url(../img/githubb.png) center/24px;
           }
           i.blog {
-            background-position: 0 -24px;
+            background: url(../img/blog.png) center/26px;
+            background-color: #fff;
+            border-radius: 50%;
           }
           i.photography {
-            background-position: 0 -48px;
+            background: url(../img/500px.png) center/24px;
           }
           a {
             display: inline-block;
@@ -255,7 +257,7 @@ header {
                 background-color: #0769ad;
                 color: #ddd;
                 margin: 0 5px 0 5px;
-                padding: 2px 4px;
+                padding: 4px 6px;
                 font-size: 12px;
                 border-radius: 5px;
               }

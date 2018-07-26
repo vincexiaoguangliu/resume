@@ -4,13 +4,13 @@ $(document).ready(function() {
         imgWraper = $(".img-wraper"),
         intro = $(".intro"),
         fillJS = $(".fill-js"),
-        fillHTML = $(".fill-html"),
-        fillCSS = $(".fill-css"),
+        fillVue = $(".fill-vue"),
+        fillRA = $(".fill-ra"),
         fillPS = $(".fill-ps"),
         fillGit = $(".fill-git"),
         fillGulp = $(".fill-gulp"),
         fillBS = $(".fill-bs"),
-        fillHAPP = $(".fill-happ"),
+        fillJQ = $(".fill-jq"),
         fillWP = $(".fill-wp"),
         fillND = $(".fill-node"),
         navBar = $("nav"),
@@ -20,15 +20,15 @@ $(document).ready(function() {
         key.css("width", value)
     };
     addClassFn(fillJS, "75%");
-    addClassFn(fillHTML, "80%");
-    addClassFn(fillCSS, "85%");
-    addClassFn(fillPS, "90%");
-    addClassFn(fillGit, "60%");
-    addClassFn(fillGulp, "85%");
-    addClassFn(fillBS, "90%");
-    addClassFn(fillWP, "29%");
-    addClassFn(fillHAPP, "55%");
-    addClassFn(fillND, "18%");
+    addClassFn(fillVue, "65%");
+    addClassFn(fillRA, "28%");
+    addClassFn(fillPS, "85%");
+    addClassFn(fillGit, "50%");
+    addClassFn(fillGulp, "75%");
+    addClassFn(fillBS, "85%");
+    addClassFn(fillWP, "55%");
+    addClassFn(fillJQ, "35%");
+    addClassFn(fillND, "15%");
     figure.hover(function() {
         var _this = $(this);
         _this.css("z-index", "60");

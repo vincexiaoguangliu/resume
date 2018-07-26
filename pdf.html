@@ -6,14 +6,14 @@
   <title>刘小光的简历</title>
   <link rel="shortcut icon" href="dist/img/favicon.ico">
   <link rel="stylesheet" href="dist/css/reset.css">
-  <link rel="stylesheet" href="dist/css/main.css">
+  <link rel="stylesheet" href="dist/pdf/pdf.css">
   <script src="dist/js/lib/jquery-3.2.1.min.js"></script>
   <script src="dist/js/main.js"></script>
 </head>
 
 <body>
-<header style="background-color: #beedff">
-    <div class="header-container" style="height: 1838px;padding-top: 10px;" id="toTop">
+  <header>
+    <div class="header-container" style="width: 1000px;padding-top: 5px;" id="toTop">
       <nav style="display: none;">
         <ul>
           <li class="nav-about nav-active">
@@ -27,11 +27,11 @@
       </nav>
       <section id="about">
         <article class="base-info">
-          <div class="avatar">
+          <div class="avatar" style="display: none">
             <img src="dist/img/avatar.jpg" alt="avatar">
           </div>
-          <div class="name">
-            <p>刘小光</p>
+          <div class="name" style="height: auto">
+            <p style="margin: 50px 0 40px; font-size: 40px;">刘小光</p>
           </div>
           <div class="position">
             <p>应聘职位：前端开发工程师</p>
@@ -40,11 +40,11 @@
             <h2>基本信息</h2>
             <ul>
               <li>专业：电子科学与技术</li>
-              <li>学历：本科（2014年7月毕业）</li>
+              <li>学历：本科</li>
               <li>毕业院校：广东工业大学</li>
               <li>英语：六级</li>
+              <li>籍贯：山东</li>
               <li>出生年月：1991年3月</li>
-              <li>籍贯：山东滨州</li>
               <li>手机：18565681307</li>
               <li>邮箱：
                 <a href="mailto:vincexgliu@gmail.com" style="animation: none !important;" title="点击给我发送邮件">vincexgliu@gmail.com</a>
@@ -55,7 +55,7 @@
             <h2>个人网站</h2>
             <p>
               <a href="https://github.com/xiaogliu" target="blank">
-                <i class="github"></i>GitHub</a>
+                <i class="github"></i>GitHub</a>（单项目最多 57 star）
             </p>
             <p>
               <a href="https://xiaogliu.github.io/" target="blank">
@@ -63,9 +63,13 @@
             </p>
             <p>
               <a href="https://500px.com/xiaogliu" target="blank">
-                <i class="photography"></i>500px（摄影网站）</a>
+                <i class="photography"></i>500px</a>（摄影网站）
             </p>
           </div>
+          <!-- <div class="work-experience">
+            <h2>自我评价</h2>
+            <p>热爱前端开发，对技术和用户体验有追求；理解业务逻辑能力强，避免开发事倍功半；有绘画、摄影基础，能准确理解UI设计师意图；可流畅阅读英文文档，在前端日新月异的今天能快速学习新技术。</p>
+          </div> -->
           <div class="pdf-file">
             <a href="https://xiaogliu.github.io/resume/" target="_blank">查看在线简历</a>
           </div>
@@ -75,47 +79,45 @@
             <h2>技能</h2>
             <div class="tech-info">
               <ul>
-                <li>- 能通过 JavaScript、HTML、CSS 快速构建出浏览器兼容、跨平台（手机、PC）的Web页面；</li>
-                <li>- 熟练使用 Vue、React(React Native)、AngularJS(1.0)、jQuery、Bootstrap</li>
-                <li>- 熟练使用 Sass、PostCss 及 Gulp、NPM Script 等自动化工具，了解Webpack的使用；</li>
-                <li>- 基于 React Native / Ionic 可快速开发 Android、iOS APP；</li>
-                <li>- 熟悉 ES6/7 基础语法；</li>
+                <li>- 能通过 JavaScript、HTML、CSS 构建出浏览器兼容、跨平台（手机、PC）的Web页面；</li>
+                <li>- 掌握 Vue 的使用；</li>
+                <li>- 掌握 ES6/7 基础语法；</li>
+                <li>- 熟练使用 Webpack、Gulp 等前端工程化工具；</li>
                 <li>- 熟练使用 Git、PhotoShop；</li>
-                <li>- 熟悉数据库基本操作；</li>
-                <li>- 可以流畅阅读英文技术文档；</li>
+                <li>- 熟悉 React(React Native)、jQuery 的使用；</li>
+                <li>- 可基于 React Native 开发 Android、iOS APP；</li>
+                <li>- 了解 Node.js 的使用；</li>
+                <li>- 可流畅阅读英文技术文档。</li>
               </ul>
             </div>
             <div class="tech-gragh">
               <div class="progress-bar">
-                <span class="fill fill-js">JS ( Vue, React, jQuery, Angular )</span>
+                <span class="fill fill-js">JS, HTML, CSS</span>
               </div>
               <div class="progress-bar">
-                <span class="fill fill-html">HTML ( H5 )</span>
+                <span class="fill fill-vue">Vue.js</span>
               </div>
               <div class="progress-bar">
-                <span class="fill fill-css">CSS ( CSS3, SASS, PostCSS )</span>
-              </div>
-              <div class="progress-bar">
-                <span class="fill fill-happ">APP ( React Native, Ionic )</span>
-              </div>
-              <div class="progress-bar">
-                <span class="fill fill-git">Git</span>
-              </div>
-              <div class="progress-bar">
-                <span class="fill fill-bs">Bootstrap</span>
-              </div>
-              <div class="progress-bar">
-                <span class="fill fill-ps">PhotoShop</span>
+                <span class="fill fill-wp">Webpack</span>
               </div>
               <div class="progress-bar">
                 <span class="fill fill-gulp">Gulp</span>
               </div>
               <div class="progress-bar">
-                <span class="fill fill-wp">Webpack</span>
+                <span class="fill fill-git">Git</span>
               </div>
-              <!-- <div class="progress-bar">
-                            <span class="fill fill-node">Node.js</span>
-                          </div> -->
+              <div class="progress-bar">
+                <span class="fill fill-ra">React Native</span>
+              </div>
+              <div class="progress-bar">
+                <span class="fill fill-jq">jQuery</span>
+              </div>
+              <div class="progress-bar">
+                <span class="fill fill-node">Node</span>
+              </div>
+              <div class="progress-bar">
+                <span class="fill fill-ps">PhotoShop</span>
+              </div>
             </div>
             <div class="clear-fix"></div>
           </div>
@@ -125,73 +127,66 @@
               <li>
                 <div class="work-head">
                   <span class="work-company">
-                    <a href="https://www.lansheng8.com/" target="_blank" style="font-size: 18px;">
-                      榄盛咨询服务有限公司官网
-                    </a>
-                    、OA系统及APP（基于 React Native）的开发
-                  </span>
-                </div>
-                <div class="work-content">
-                  <p>基于 Vue.js 开发榄盛咨询服务有限公司官网及OA系统，基于
-                    <a href="https://facebook.github.io/react-native/" target="_blank" style="color: #8c4b07;">React Native</a> 开发榄盛金融 APP（<a href="https://itunes.apple.com/cn/app/id1336295162" target="_blank" style="color: #8c4b07;">iOS已上架</a>，安卓审核中），项目开发中为前端主程。</p>
-                </div>
-              </li>
-              <li>
-                <div class="work-head">
-                  <span class="work-company">
-                    <a href="https://www.justsharecloud.com/" target="_blank" style="font-size: 18px;">
-                      即享软件
+                    <a href="https://www.lansheng8.com/" target="_blank" style="font-size: 18px; color: #7A57D1;">
+                      榄盛金融理财平台
                     </a>
                   </span>
                 </div>
                 <div class="work-content">
-                  <p>基于 Angular 1.0，涉及 NodeJS， React， Gulp 及 Git 工作流多人（5人）协作，期间负责软件详情页面开发。
-                    <b>体验账号/密码：dkcuiui/123qwe</b>
+                  <p>
+                    具有较复杂的业务逻辑，基于 Vue.js 开发，使用 Vuex 进行状态管理同时借助
+                    <a href="https://github.com/robinvdvleuten/vuex-persistedstate" target="_blank" style="color: #7A57D1;">vuex-persistedstate</a> 更改 Vuex 默认状态更新机制（实际使用中，保存在了 sessionStorage 中）；使用 Webpack 进行前端工程化管理（借助 Babel 转换
+                    ES6/7 新语法、为不同资源添加不同 hash 值以便网站更新时最大程度实现缓存再利用等）；表单输入进行字符校验防止 XSS 攻击；禁止同一浏览器下多用户登录，防止出现 CSRF 攻击；按钮点击操作通过截流函数限制提交频率；布局主要使用
+                    flex 布局。开发阶段，通过反向代理实现跨域请求后台API（因为要发送cookie）；通过 ESLint 进行代码检查。
                   </p>
                 </div>
               </li>
               <li>
                 <div class="work-head">
                   <span class="work-company">
-                    <a href="http://shouji.baidu.com/software/11482855.html" target="_blank" style="font-size: 18px;">
-                      NPIC订票 手机APP
+                    <a href="https://www.lanshengbang.com/" target="_blank" style="font-size: 18px; color: #7A57D1;">
+                      有格金融官网/云熙天祺（基金）官网
                     </a>
                   </span>
                 </div>
                 <div class="work-content">
-                  <p>基于
-                    <a href="http://ionicframework.com/" target="_blank" style="color: #8c4b07;">Ionic</a> 开发的 Hybrid APP，
-                    <a href="http://shouji.baidu.com/software/11482855.html" target="_blank" style="color: #8c4b07;">已上架（安卓）</a>，现已在中国核动力研究设计院内部投入使用。前端、设计由本人独立开发。</p>
+                  <p>
+                    静态展示页面。PC 端使用了自己写的
+                    <a href="https://github.com/xiaogliu/pure_full_page" target="_blank" style="color: #7A57D1;">全屏滚动插件</a> ；移动端使用 rem 方案解决不同手机屏幕自适应问题，同时不同 dpr 的屏幕加载不同分辨率的图片。
+                  </p>
                 </div>
               </li>
               <li>
                 <div class="work-head">
                   <span class="work-company">
-                    <a href="http://www.zhilinktech.com/" target="_blank" style="font-size: 18px;">
-                      智互联官网
+                    <a href="https://github.com/xiaogliu/pure_full_page" target="_blank" style="font-size: 18px; color: #7A57D1;">
+                      全屏滚动插件
                     </a>
                   </span>
                 </div>
                 <div class="work-content">
-                  <p>智互联科技有限公司官网，自适应手机、PC端，兼容 IE9+ 及其他现代浏览器。前端由本人独立开发。</p>
+                  <p>
+                    自己使用原生 JS（主要使用 ES6 语法）开发的全屏滚动插件，兼容IE10+、移动端、mac 触摸板优化，gzip
+                    < 2.15KB。开发这个插件的原因是目前用户量很大的全屏滚动插件，比如 <a href="https://github.com/xiaogliu/pure_full_page" target="_blank" style="color: #7A57D1;">fullPage</a> 是基于 jQuery 开发的，但随着浏览器兼容性及原生 JS 的不断完善好多场景不需要引入 jQuery。
+                  </p>
                 </div>
               </li>
               <li>
                 <div class="work-head">
                   <span class="work-company">
-                    <a href="https://github.com/xiaogliu/HTML_emails" target="_blank" style="font-size: 18px;">
+                    <a href="https://github.com/xiaogliu/HTML_emails" target="_blank" style="font-size: 18px; color: #7A57D1;">
                       HTML营销邮件
                     </a>
                   </span>
                 </div>
                 <div class="work-content">
-                  <p>智互联科技有限公司HTML营销邮件，兼容主流邮件客户端。独立开发。</p>
+                  <p>智互联科技有限公司 HTML 营销邮件，使用 table 布局，兼容主流邮件客户端。</p>
                 </div>
               </li>
               <li>
                 <div class="work-head">
                   <span class="work-company">
-                    <a href="http://www.npic.site:8888/resume/index.html#project" target="_blank" style="text-decoration: underline;">
+                    <a href="https://xiaogliu.github.io/resume/#project" target="_blank" style="text-decoration: underline; color: #7A57D1;">
                       查看更多项目经历请点击此处
                     </a>
                   </span>
@@ -207,22 +202,24 @@
                   <span class="work-company" style="font-size: 18px;">
                     <a href="https://www.lansheng8.com/" target="_blank">榄盛咨询服务有限公司</a>
                   </span>
-                  <span class="work-position">前端开发工程师</span> 2017.6 ~ 至今
+                  <span class="work-position">前端开发工程师</span> 2017.6 ~ 2018.7.31
                 </div>
                 <div class="work-tags">
                   <span>Vue.js</span>
-                  <span>React.js</span>
-                  <span>Hybrid App</span>
                   <span>移动端开发</span>
                   <span>Webpack</span>
-                  <span>PostCss</span>
-                  <span>可视化</span>
+                  <span>Web安全</span>
+                  <span>性能优化</span>
+                  <span>React Native</span>
+                  <span>Hybrid App</span>
                 </div>
                 <div class="work-content">
                   <p>主要职责为：</p>
-                  <p>- 开发榄盛金融APP（基于 React Native）；</p>
-                  <p>- 开发榄盛金融官网，包括 PC 和移动端页面；</p>
-                  <p>- 开发榄盛金融后台管理系统（OA）。</p>
+                  <p>- 前端技术选型、框架搭建；</p>
+                  <p>- 开发榄盛金融理财平台，包括 PC 和移动端 Web 页面及 <a href="https://itunes.apple.com/cn/app/id1336295162" target="_blank" style="color: #7A57D1;">原生 APP</a>（基于 React Native）；</p>
+                  <p>- 开发榄盛金融内部 OA 系统并打包桌面应用（基于 Electron）；</p>
+                  <p>- 开发榄盛金融相关公司官网、活动页等。</p>
+                  <p>备注：React Native 和 Electron 项目实际开发周期很短，且后续没在维护，所以了解不深入。</p>
                 </div>
               </li>
               <li>
@@ -235,13 +232,13 @@
                 <div class="work-tags">
                   <span>AngularJS(1.0)</span>
                   <span>Git多人协作</span>
-                  <span>Sass</span>
                   <span>Gulp</span>
                 </div>
                 <div class="work-content">
-                  <p>期间主要职责为：</p>
-                  <p>- 智互联主营产品：即享软件的开发；</p>
-                  <p>- 智互联官网开发、营销邮件 newsletter 制作。</p>
+                  <p>主要职责为：</p>
+                  <p>- 开发智互联 Saas 平台：即享软件（基于 AngularJS(1.0)）；</p>
+                  <p>- 开发营销邮件；</p>
+                  <p>- 开发智互联官网。</p>
                 </div>
               </li>
               <li>
@@ -252,43 +249,17 @@
                   <span class="work-position">工艺工程师（兼职前端开发）</span> 2014.7 ~ 2016.7
                 </div>
                 <div class="work-tags">
-                  <span>JavaScript</span>
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>Git代码管理</span>
                   <span>Bootstrap</span>
                   <span>jQuery</span>
                   <span>jQuery Mobile</span>
                   <span>amaze UI</span>
-                </div>
-                <div class="work-content">
-                  <p>在康佳工作时非全职前端，2015年11月开始，工作之余进行前端开发工作，经历的项目主要有：</p>
-                  <p>- 中国核动力研究设计院党员学习APP；</p>
-                  <p>- 江苏九比特信息系统有限公司官网。</p>
-                </div>
-              </li>
-              <li>
-                <div class="work-head">
-                  <span class="work-company" style="font-size: 18px;">其他</span>
-                  <span class="work-position"></span> 持续进行
-                </div>
-                <div class="work-tags">
-                  <span>Hybrid APP</span>
                   <span>Ionic</span>
                 </div>
                 <div class="work-content">
-                  <p>工作之余喜欢用前端技术解决问题及尝试新事物：</p>
-                  <p>- 中国核动力研究设计院班车订票手机APP，采用 Ionic 框架开发的 Android、IOS 手机应用，已上线。</p>
+                  <p>在康佳工作时非全职前端，2015年11月开始，工作之余进行前端开发工作，经历的项目主要有：</p>
+                  <p>- 江苏九比特信息系统有限公司官网（基于 Bootstrap）；</p>
+                  <p>- 中国核动力研究设计院 <a href="http://shouji.baidu.com/software/11482855.html" target="_blank" style="color: #7A57D1;">班车订票 APP</a>（基于 Ionic ）。</p>
                 </div>
-              </li>
-            </ul>
-          </div>
-          <div class="work-experience">
-            <h2>自我评价</h2>
-            <ul>
-              <li>
-                <p>热爱前端开发，对技术和用户体验有追求；理解业务逻辑能力强，避免开发事倍功半；有绘画、摄影基础，能准确理解UI设计师意图；可流畅阅读英文文档，在前端日新月异的今天能快速学习新技术。</p>
-                <p>现存在不足：计算机基础知识有待加强。</p>
               </li>
             </ul>
           </div>
