@@ -22,7 +22,7 @@ $(document).ready(function() {
     addClassFn(fillJS, "75%");
     addClassFn(fillVue, "65%");
     addClassFn(fillRA, "28%");
-    addClassFn(fillPS, "85%");
+    addClassFn(fillPS, "70%");
     addClassFn(fillGit, "50%");
     addClassFn(fillGulp, "75%");
     addClassFn(fillBS, "85%");

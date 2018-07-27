@@ -128,19 +128,14 @@ header {
               display: inline-block;
               width: 24px;
               height: 24px;
-              border-radius: 50%;
-            }
-            i.github {
-              background: url(../img/githubb.png) center/24px;
-              background-color: #fff;
+              background-image: url(../img/icon.png);
+              background-size: 24px;
             }
             i.blog {
-              background: url(../img/blog.png) center/26px;
-              background-color: #fff;
+              background-position: 0px -25px;
             }
             i.photography {
-              background: url(../img/500px.png) center/24px;
-              background-color: #fff;
+              background-position: 0px -49px;
             }
             a {
               display: inline-block;
