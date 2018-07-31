@@ -5,7 +5,7 @@ $(document).ready(function() {
         intro = $(".intro"),
         fillJS = $(".fill-js"),
         fillVue = $(".fill-vue"),
-        fillRA = $(".fill-ra"),
+        fillHTTP = $(".fill-http"),
         fillPS = $(".fill-ps"),
         fillGit = $(".fill-git"),
         fillGulp = $(".fill-gulp"),
@@ -21,7 +21,7 @@ $(document).ready(function() {
     };
     addClassFn(fillJS, "75%");
     addClassFn(fillVue, "65%");
-    addClassFn(fillRA, "28%");
+    addClassFn(fillHTTP, "50%");
     addClassFn(fillPS, "70%");
     addClassFn(fillGit, "50%");
     addClassFn(fillGulp, "75%");
