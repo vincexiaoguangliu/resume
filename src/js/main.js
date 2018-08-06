@@ -11,6 +11,7 @@ $(document).ready(function() {
         fillGulp = $(".fill-gulp"),
         fillBS = $(".fill-bs"),
         fillJQ = $(".fill-jq"),
+        fillRA = $(".fill-ra"),
         fillWP = $(".fill-wp"),
         fillND = $(".fill-node"),
         navBar = $("nav"),
@@ -28,6 +29,7 @@ $(document).ready(function() {
     addClassFn(fillBS, "85%");
     addClassFn(fillWP, "55%");
     addClassFn(fillJQ, "35%");
+    addClassFn(fillRA, "20%");
     addClassFn(fillND, "15%");
     figure.hover(function() {
         var _this = $(this);
